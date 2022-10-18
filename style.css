@@ -6,8 +6,38 @@ body {
     transition: all 0.35s ease-in-out;
 }
 
+a {
+    margin: 7px;
+    color: #fff;
+    font-size: 36px;
+}
+
+.box {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1A1A1A;
+    border-radius: 15px;
+    padding: 1.5%;
+    font-size: 33px;
+    box-shadow: #000000 0 0px 15px;
+    text-decoration: none;
+    float: initial;
+}
+
+michalbox {
+    width: 275px;
+}
+
+kubabox {
+    width: 375px;
+}
+
+jacabox {
+    width: 370px;
+}
+
 text {
-    margin: 37%;
+    margin: 450px;
     position: relative;
     justify-content: center;
     justify-items: center;
@@ -48,6 +78,7 @@ text:hover {
     touch-action: manipulation;
     width: 10%;
     will-change: transform;
+    margin: 0%
 }
 
 .avatars:disabled {
