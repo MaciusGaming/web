@@ -4,6 +4,7 @@ body {
 
 * {
     transition: all 0.35s ease-in-out;
+    font-family: 'Inconsolata', monospace;
 }
 
 a {
@@ -25,15 +26,15 @@ a {
 }
 
 michalbox {
-    width: 275px;
+    width: 335px;
 }
 
 kubabox {
-    width: 375px;
+    width: 420px;
 }
 
 jacabox {
-    width: 370px;
+    width: 415px;
 }
 
 text {
