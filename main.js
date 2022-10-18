@@ -1,24 +1,45 @@
 function Michal() {
     var michalbox = document.getElementById("MichalBox");
-    michalbox.style.display = "block";
+    if (michalbox.style.display == "none") {
+        michalbox.style.display = "block";
+    } else {
+        michalbox.style.display = "none";
+    }
+
 }
 
 function Kuba() {
-    var michal = document.getElementById("Kuba");
-    michal.style.display = "none";
+    var kubabox = document.getElementById("KubaBox");
+    if (kubabox.style.display == "none") {
+        kubabox.style.display = "block";
+    } else {
+        kubabox.style.display = "none";
+    }
 }
 
 function Jaca() {
-    var michal = document.getElementById("Jaca");
-    michal.style.display = "none";
+    var jacabox = document.getElementById("JacaBox");
+    if (jacabox.style.display == "none") {
+        jacabox.style.display = "block";
+    } else {
+        jacabox.style.display = "none";
+    }
 }
 
 function Damianek() {
-    var michal = document.getElementById("Damianek");
-    michal.style.display = "none";
+    var damianekbox = document.getElementById("DamianekBox");
+    if (damianekbox.style.display == "none") {
+        damianekbox.style.display = "block";
+    } else {
+        damianekbox.style.display = "none";
+    }
 }
 
 function Stasio() {
-    var michal = document.getElementById("Stasio");
-    michal.style.display = "none";
+    var stasiobox = document.getElementById("StasioBox");
+    if (stasiobox.style.display == "none") {
+        stasiobox.style.display = "block";
+    } else {
+        stasiobox.style.display = "none";
+    }
 }
