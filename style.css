@@ -10,50 +10,61 @@ body {
 a {
     margin: 7px;
     color: #fff;
-    font-size: 36px;
+    font-size: 38px;
 }
 
 .box {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 0;
     background-color: #1A1A1A;
     border-radius: 15px;
     padding: 1.5%;
     font-size: 33px;
     box-shadow: #000000 0 0px 15px;
     text-decoration: none;
-    float: initial;
+    align-items: center;
 }
 
 michalbox {
-    width: 335px;
+    width: 340px;
 }
 
 kubabox {
-    width: 420px;
+    width: 430px;
 }
 
 jacabox {
-    width: 415px;
+    width: 450px;
 }
 
 text {
-    margin: 450px;
     position: relative;
-    justify-content: center;
+    align-items: center;
     justify-items: center;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 225%;
-    text-align: center;
-    color: rgb(189, 189, 189);
-    text-shadow: rgba(154, 154, 154, 0.25) 0 8px 15px;
+    margin-left: 39%;
+    font-size: 40px;
 }
 
-text:hover {
-    margin: 36.95%;
-    font-size: 226%;
-    color: rgb(255, 255, 255);
-    text-shadow: rgba(154, 154, 154, 0.25) 0 12px 23px;
+text::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate 4.5s linear infinite;
+    filter: drop-shadow(0 0 20px #fff)
+}
+
+@keyframes animate {
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+    70%,
+    90% {
+        width: 100%;
+    }
 }
 
 .avatars {
@@ -77,9 +88,8 @@ text:hover {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 10%;
+    width: 150px;
     will-change: transform;
-    margin: 0%
 }
 
 .avatars:disabled {
